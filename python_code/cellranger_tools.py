@@ -116,7 +116,7 @@ class CellrangerTools:
             os.rename(old_path,new_path)
             print(f'{fastq} is renamed to {newFileName}')
 
-    def cellranger_count(self,ids:List=None, transcriptome:str=None, cores:int=None, mem:int=None):
+    def cellranger_count(self,ids:list=None, transcriptome:str=None, cores:int=None, mem:int=None):
         """this function is used to perform the cellranger count function on the fastq files.
 
         Args:
